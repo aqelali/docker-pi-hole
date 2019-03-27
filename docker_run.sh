@@ -7,7 +7,7 @@ docker run -d \
     -p 53:53/tcp -p 53:53/udp \
     -p 80:80 \
     -p 443:443 \
-    -e TZ="America/Chicago" \
+    -e TZ="America/Los_Angeles" \
     -v "$(pwd)/etc-pihole/:/etc/pihole/" \
     -v "$(pwd)/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
     --dns=127.0.0.1 --dns=1.1.1.1 \
